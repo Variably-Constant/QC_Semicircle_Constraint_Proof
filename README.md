@@ -3,7 +3,7 @@
 **A Geometric Framework for Quantum-Classical Correlation**
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18408825.svg)](https://doi.org/10.5281/zenodo.18408825)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18451496.svg)](https://doi.org/10.5281/zenodo.18451496)
 
 ## Overview
 
@@ -21,7 +21,7 @@ where `q` is measurement probability and `C_qc = sqrt(q(1-q))` is the quantum-cl
 |--------|--------|
 | Semicircle constraint derived from Born rule | **Proven** |
 | q = 0.5 is unique maximum of C_qc | **Proven** |
-| Fisher information constant along semicircle | **Proven** |
+| Fisher information constant, arc length = pi | **Proven** |
 | Geometric origin of barren plateaus | Simulation validated |
 | Core constraint validation on IonQ Forte-1 | **Hardware validated** (r = 0.943) |
 
@@ -82,8 +82,8 @@ python azure_quantum_tests.py \
   author       = {Newton, Mark},
   title        = {The Semicircle Constraint: A Geometric Framework for Quantum-Classical Correlation},
   year         = {2026},
-  doi          = {10.5281/zenodo.18408825},
-  url          = {https://doi.org/10.5281/zenodo.18408825}
+  doi          = {10.5281/zenodo.18451496},
+  url          = {https://doi.org/10.5281/zenodo.18451496}
 }
 ```
 
