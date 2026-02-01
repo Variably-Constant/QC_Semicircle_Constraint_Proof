@@ -1,13 +1,13 @@
 # The Semicircle Constraint
 
-**A Fundamental Geometric Principle in Quantum Mechanics**
+**A Geometric Framework for Quantum-Classical Correlation**
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18408825.svg)](https://doi.org/10.5281/zenodo.18408825)
 
 ## Overview
 
-This repository contains the paper, code, and experimental data establishing the **semicircle constraint** as a fundamental geometric principle in quantum mechanics:
+This repository contains the paper, code, and experimental data presenting the **semicircle constraint** as a geometric framework for quantum-classical correlation:
 
 ```
 (q - 1/2)^2 + C_qc^2 = 1/4
@@ -80,7 +80,7 @@ python azure_quantum_tests.py \
 ```bibtex
 @misc{newton2026semicircle,
   author       = {Newton, Mark},
-  title        = {The Semicircle Constraint: A Fundamental Geometric Principle in Quantum Mechanics},
+  title        = {The Semicircle Constraint: A Geometric Framework for Quantum-Classical Correlation},
   year         = {2026},
   doi          = {10.5281/zenodo.18408825},
   url          = {https://doi.org/10.5281/zenodo.18408825}
@@ -90,7 +90,7 @@ python azure_quantum_tests.py \
 ## Related Work
 
 This is paper 1 of a three-paper series:
-1. **Semicircle Constraint** (this work) - Fundamental principle
+1. **Semicircle Constraint** (this work) - Geometric framework
 2. **Complete Circle** - Extension to full 2π with CPT conjecture
 3. **Fractals & Coherence** - Connection to fractal structures
 

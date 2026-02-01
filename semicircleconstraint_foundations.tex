@@ -15,7 +15,7 @@
 
 \begin{document}
 
-\title{The Semicircle Constraint: A Fundamental Geometric Principle in Quantum Mechanics}
+\title{The Semicircle Constraint: A Geometric Framework for Quantum-Classical Correlation}
 
 \author{Mark Newton}
 \email{mark@variablyconstant.com}
@@ -24,7 +24,7 @@
 \date{January 30, 2026}
 
 \begin{abstract}
-We establish a fundamental geometric constraint governing the relationship between quantum measurement probability and quantum-classical correlation. For any normalized quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$, the measurement probability $q = |\beta|^2$ and quantum-classical correlation $C_{qc} = |\alpha||\beta| = \sqrt{q(1-q)}$ satisfy the \emph{semicircle constraint}: $(q - \frac{1}{2})^2 + C_{qc}^2 = \frac{1}{4}$. This constraint emerges rigorously from the Born rule and quantum state normalization, describing a semicircle of radius $\frac{1}{2}$ centered at $(\frac{1}{2}, 0)$ in the $(q, C_{qc})$ plane. The constraint provides a geometric interpretation of the quantum-classical boundary: classical states ($q \to 0$ or $q \to 1$) lie at the endpoints with $C_{qc} \to 0$, while maximum quantum coherence ($C_{qc} = \frac{1}{2}$) occurs uniquely at $q = \frac{1}{2}$. We prove the Fisher information is constant along the semicircle trajectory, and demonstrate applications to variational quantum algorithms where the constraint explains the geometric origin of barren plateaus. Experimental validation on IonQ Forte-1 trapped-ion hardware (15 test points, 52 shots each, $r = 0.943$ correlation) confirms consistency with theoretical predictions.
+We present a geometric framework describing the relationship between quantum measurement probability and quantum-classical correlation. For any normalized quantum state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$, the measurement probability $q = |\beta|^2$ and quantum-classical correlation $C_{qc} = |\alpha||\beta| = \sqrt{q(1-q)}$ satisfy the \emph{semicircle constraint}: $(q - \frac{1}{2})^2 + C_{qc}^2 = \frac{1}{4}$. This constraint emerges rigorously from the Born rule and quantum state normalization, describing a semicircle of radius $\frac{1}{2}$ centered at $(\frac{1}{2}, 0)$ in the $(q, C_{qc})$ plane. The constraint provides a geometric interpretation of the quantum-classical boundary: classical states ($q \to 0$ or $q \to 1$) lie at the endpoints with $C_{qc} \to 0$, while maximum quantum coherence ($C_{qc} = \frac{1}{2}$) occurs uniquely at $q = \frac{1}{2}$. We prove the Fisher information is constant along the semicircle trajectory, and demonstrate applications to variational quantum algorithms where the constraint explains the geometric origin of barren plateaus. Experimental validation on IonQ Forte-1 trapped-ion hardware (15 test points, 52 shots each, $r = 0.943$ correlation) confirms consistency with theoretical predictions.
 \end{abstract}
 
 \maketitle
@@ -35,7 +35,7 @@ We establish a fundamental geometric constraint governing the relationship betwe
 
 The relationship between quantum and classical physics has been a central question since the inception of quantum mechanics~\cite{Born1926}. While the Born rule $P = |\langle\phi|\psi\rangle|^2$ provides the fundamental connection between quantum amplitudes and classical probabilities, the geometric structure underlying this relationship has remained largely unexplored.
 
-In this work, we derive and prove a geometric constraint---the \emph{semicircle constraint}---that governs the interplay between measurement probability and quantum coherence. Starting from the Born rule and quantum state normalization alone, we prove that measurement probability $q$ and quantum-classical correlation $C_{qc}$ are constrained to lie on a semicircle in the $(q, C_{qc})$ plane. This geometric structure has profound implications:
+In this work, we derive and prove a geometric constraint---the \emph{semicircle constraint}---that governs the interplay between measurement probability and quantum coherence. Starting from the Born rule and quantum state normalization alone, we prove that measurement probability $q$ and quantum-classical correlation $C_{qc}$ are constrained to lie on a semicircle in the $(q, C_{qc})$ plane. This geometric structure has several useful implications:
 
 \begin{enumerate}
     \item \textbf{Quantum-classical boundary}: The semicircle provides a geometric ``phase space'' for quantum states, with classical limits at the endpoints and maximum quantum coherence at the apex.
@@ -43,7 +43,7 @@ In this work, we derive and prove a geometric constraint---the \emph{semicircle 
     \item \textbf{Constant Fisher information}: The information-theoretic distance along the semicircle is uniform, reflecting deep connections to quantum information geometry.
 \end{enumerate}
 
-We further demonstrate that this fundamental constraint has practical applications to variational quantum algorithms (VQAs)~\cite{Peruzzo2014,Farhi2014}, where it explains the geometric origin of barren plateaus~\cite{McClean2018,Cerezo2021} and provides design principles for optimization.
+We further demonstrate that this constraint has practical applications to variational quantum algorithms (VQAs)~\cite{Peruzzo2014,Farhi2014}, where it explains the geometric origin of barren plateaus~\cite{McClean2018,Cerezo2021} and provides design principles for optimization.
 
 All predictions are validated experimentally on IonQ Forte-1 trapped-ion quantum hardware via Azure Quantum.
 
@@ -108,7 +108,7 @@ Computing the left-hand side of~\eqref{eq:semicircle}:
 
 \subsection{Geometric Interpretation}
 
-The constraint~\eqref{eq:semicircle} has profound geometric meaning:
+The constraint~\eqref{eq:semicircle} has clear geometric meaning:
 \begin{itemize}
     \item \textbf{Classical limits} ($C_{qc} \to 0$): States approach endpoints $(0,0)$ or $(1,0)$, corresponding to definite classical outcomes.
     \item \textbf{Maximum coherence} ($C_{qc} = \frac{1}{2}$): Achieved only at $q = \frac{1}{2}$, the apex of the semicircle.
@@ -320,9 +320,9 @@ The Fisher information along the semicircle trajectory is constant:
 \begin{equation}
 I_F(\theta) = \left(\frac{\partial q}{\partial\theta}\right)^2 \frac{1}{q(1-q)} = 1
 \end{equation}
-using $q = \sin^2(\theta/2)$. This reflects uniform ``information density'' along the semicircle, a remarkable property with deep connections to quantum information geometry~\cite{Nielsen2010}.
+using $q = \sin^2(\theta/2)$. This reflects uniform ``information density'' along the semicircle, connecting to quantum information geometry~\cite{Nielsen2010}.
 
-\subsection{Fundamental Significance}
+\subsection{Summary of Contributions}
 
 The semicircle constraint provides a geometric framework for understanding several aspects of quantum mechanics:
 
@@ -349,20 +349,20 @@ Our geometric framework unifies several previously disconnected observations:
     \item McClean et al.~\cite{McClean2018} identified barren plateaus but attributed them to expressibility.
     \item Cerezo et al.~\cite{Cerezo2021} connected barren plateaus to cost function locality.
     \item Holmes et al.~\cite{Holmes2022} linked ansatz expressibility to gradient magnitudes.
-    \item Our work shows these phenomena arise from the fundamental semicircle constraint.
+    \item Our work provides a unified geometric perspective on these phenomena via the semicircle constraint.
 \end{itemize}
 
 %=============================================================================
 \section{Conclusion}
 %=============================================================================
 
-We have established the semicircle constraint $(q - \frac{1}{2})^2 + C_{qc}^2 = \frac{1}{4}$ as a fundamental geometric principle in quantum mechanics. Key results:
+We have presented the semicircle constraint $(q - \frac{1}{2})^2 + C_{qc}^2 = \frac{1}{4}$ as a geometric framework for understanding quantum-classical correlation. Key results:
 
 \begin{enumerate}
     \item The constraint emerges rigorously from the Born rule and quantum state normalization, with no additional assumptions.
     \item The semicircle provides a geometric ``phase space'' for quantum states, encoding the quantum-classical boundary.
     \item $q = \frac{1}{2}$ is the unique point of maximum quantum-classical correlation ($C_{qc} = \frac{1}{2}$).
-    \item The Fisher information is constant along the semicircle trajectory, revealing deep information-geometric structure.
+    \item The Fisher information is constant along the semicircle trajectory, connecting to information-geometric structure.
     \item The constraint has practical applications to variational quantum algorithms, explaining the geometric origin of barren plateaus (simulation validated).
     \item Partial experimental validation: the semicircle constraint was validated on IonQ Forte-1 hardware (15 tests, $r = 0.943$); VQA applications remain simulation-validated.
 \end{enumerate}
