@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "date": "2026-01-28T03:29:51.772070",
+    "target": "local_simulator",
+    "shots": 500,
+    "platform": "Python (NumPy) - Local Simulation",
+    "note": "This is a LOCAL SIMULATION, not real quantum hardware"
+  },
+  "results": {
+    "test28": {
+      "passed": true,
+      "correlation": 0.9698265907993985,
+      "best_training_q": 0.5,
+      "gradient_results": [
+        {
+          "q": 0.05,
+          "theory_variance": 0.0475,
+          "measured_variance": 0.03562148810056893
+        },
+        {
+          "q": 0.1,
+          "theory_variance": 0.09000000000000001,
+          "measured_variance": 0.07148406557219616
+        },
+        {
+          "q": 0.2,
+          "theory_variance": 0.16000000000000003,
+          "measured_variance": 0.12570013038077948
+        },
+        {
+          "q": 0.3,
+          "theory_variance": 0.21,
+          "measured_variance": 0.2021863913798655
+        },
+        {
+          "q": 0.5,
+          "theory_variance": 0.25,
+          "measured_variance": 0.2135907467929444
+        },
+        {
+          "q": 0.7,
+          "theory_variance": 0.21000000000000002,
+          "measured_variance": 0.16271645014713512
+        },
+        {
+          "q": 0.8,
+          "theory_variance": 0.15999999999999998,
+          "measured_variance": 0.16338191284217807
+        },
+        {
+          "q": 0.9,
+          "theory_variance": 0.08999999999999998,
+          "measured_variance": 0.09796131120784868
+        },
+        {
+          "q": 0.95,
+          "theory_variance": 0.04750000000000004,
+          "measured_variance": 0.049918729848745035
+        }
+      ],
+      "depth_results": [
+        {
+          "n_layers": 1,
+          "variance": 0.22162733391290995
+        },
+        {
+          "n_layers": 2,
+          "variance": 0.2005630354478118
+        },
+        {
+          "n_layers": 4,
+          "variance": 0.17074741862302895
+        },
+        {
+          "n_layers": 8,
+          "variance": 0.11283987145132963
+        },
+        {
+          "n_layers": 16,
+          "variance": 0.04863958165350081
+        }
+      ],
+      "training_results": [
+        {
+          "q": 0.1,
+          "final_loss": 0.6647146634334726,
+          "converged": false
+        },
+        {
+          "q": 0.5,
+          "final_loss": 0.0,
+          "converged": true
+        },
+        {
+          "q": 0.9,
+          "final_loss": 0.6093741216851722,
+          "converged": false
+        }
+      ]
+    }
+  }
+}

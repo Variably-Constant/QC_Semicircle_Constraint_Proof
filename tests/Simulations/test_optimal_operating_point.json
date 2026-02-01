@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "date": "2026-01-28T03:29:07.583219",
+    "target": "local_simulator",
+    "shots": 1000,
+    "platform": "Python (NumPy) - Local Simulation",
+    "note": "This is a LOCAL SIMULATION, not real quantum hardware"
+  },
+  "results": {
+    "test27": {
+      "passed": true,
+      "q_at_max": 0.5,
+      "c_qc_max": 0.49998034762142923,
+      "max_eff_q": 0.5,
+      "deriv_at_half": 0.0,
+      "convergence_results": [
+        {
+          "q_init": 0.1,
+          "iterations": 9,
+          "q_final": 0.45945351403900136
+        },
+        {
+          "q_init": 0.3,
+          "iterations": 6,
+          "q_final": 0.46088822529685725
+        },
+        {
+          "q_init": 0.5,
+          "iterations": 1,
+          "q_final": 0.49800732024206856
+        },
+        {
+          "q_init": 0.7,
+          "iterations": 6,
+          "q_final": 0.5483514577327309
+        },
+        {
+          "q_init": 0.9,
+          "iterations": 11,
+          "q_final": 0.548912654096902
+        }
+      ]
+    }
+  }
+}

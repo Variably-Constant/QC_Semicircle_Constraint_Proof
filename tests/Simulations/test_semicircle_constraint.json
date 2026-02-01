@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "date": "2026-01-28T03:28:40.626018",
+    "target": "local_simulator",
+    "shots": 1000,
+    "platform": "Python (NumPy) - Local Simulation",
+    "note": "This is a LOCAL SIMULATION, not real quantum hardware. Real IonQ hardware results are in tests/Real IonQ/"
+  },
+  "results": {
+    "test26": {
+      "passed": true,
+      "rms_uniform": 2.0770370905276124e-17,
+      "rms_random": 1.8200548080610225e-17,
+      "max_residual": 5.551115123125783e-17,
+      "mean_radius": 0.5,
+      "radius_std": 2.482534153247273e-17
+    }
+  }
+}
