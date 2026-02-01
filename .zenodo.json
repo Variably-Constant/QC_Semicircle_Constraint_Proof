@@ -31,10 +31,10 @@
   "access_right": "open",
   "language": "eng",
   "doi": "10.5281/zenodo.18408825",
-  "notes": "Establishes the semicircle constraint (q - 1/2)^2 + C_qc^2 = 1/4 as a fundamental geometric principle in quantum mechanics. The constraint emerges from the Born rule and provides a geometric interpretation of the quantum-classical boundary. Proves q = 0.5 is the unique point of maximum coherence. Demonstrates applications to variational quantum algorithms including geometric origin of barren plateaus. Partial experimental validation on IonQ Forte-1 hardware via Azure Quantum (semicircle constraint validated; VQA applications simulation-validated). Code and test files available at https://github.com/Variably-Constant/qc-semicircle-constraint",
+  "notes": "Establishes the semicircle constraint (q - 1/2)^2 + C_qc^2 = 1/4 as a fundamental geometric principle in quantum mechanics. The constraint emerges from the Born rule and provides a geometric interpretation of the quantum-classical boundary. Proves q = 0.5 is the unique point of maximum coherence. Demonstrates applications to variational quantum algorithms including geometric origin of barren plateaus. Partial experimental validation on IonQ Forte-1 hardware via Azure Quantum (semicircle constraint validated; VQA applications simulation-validated). Code and test files available at https://github.com/Variably-Constant/QC_Semicircle_Constraint_Proof",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/Variably-Constant/qc-semicircle-constraint",
+      "identifier": "https://github.com/Variably-Constant/QC_Semicircle_Constraint_Proof",
       "relation": "isSupplementedBy",
       "resource_type": "software",
       "scheme": "url"
