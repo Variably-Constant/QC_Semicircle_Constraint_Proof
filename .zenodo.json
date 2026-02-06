@@ -1,6 +1,6 @@
 {
   "title": "The Semicircle Constraint: A Geometric Framework for Quantum-Classical Correlation",
-  "description": "We present a geometric framework describing the relationship between quantum measurement probability and quantum-classical correlation. For any normalized quantum state, the measurement probability q and quantum-classical correlation C_qc = sqrt(q(1-q)) satisfy the semicircle constraint: (q - 1/2)^2 + C_qc^2 = 1/4. This constraint emerges rigorously from the Born rule and quantum state normalization, describing a semicircle of radius 1/2 centered at (1/2, 0) in the (q, C_qc) plane. The constraint provides a geometric interpretation of the quantum-classical boundary: classical states (q -> 0 or q -> 1) lie at the endpoints with C_qc -> 0, while maximum quantum coherence (C_qc = 1/2) occurs uniquely at q = 1/2. We prove the Fisher information is constant along the semicircle trajectory with arc length equal to pi, and demonstrate applications to variational quantum algorithms where the constraint explains the geometric origin of barren plateaus. Partial experimental validation on IonQ Forte-1 trapped-ion hardware (15 test points, 52 shots each, r = 0.943 correlation) confirms consistency with theoretical predictions.",
+  "description": "For any normalized qubit state, the measurement probability q and quantum-classical correlation C_qc = sqrt(q(1-q)) satisfy the constraint (q - 1/2)^2 + C_qc^2 = 1/4. This is a semicircle of radius 1/2 centered at (1/2, 0) in the (q, C_qc) plane, and it follows from the Born rule and normalization alone. Classical states (q -> 0 or 1) sit at the endpoints where C_qc vanishes, while maximum coherence C_qc = 1/2 is achieved uniquely at q = 1/2. The Fisher information metric along this curve is constant, giving a total arc length of pi. We show that the constraint explains the geometric origin of barren plateaus in variational quantum algorithms: gradient variance scales as q(1-q) = C_qc^2 and vanishes at the classical endpoints. Hardware validation on IonQ Forte-1 (15 test points, 52 shots each) yields a theory-measurement correlation of r = 0.943.",
   "creators": [
     {
       "name": "Newton, Mark",
@@ -30,7 +30,7 @@
   "publication_type": "preprint",
   "access_right": "open",
   "language": "eng",
-  "doi": "10.5281/zenodo.18451496",
+  "doi": "10.5281/zenodo.18507933",
   "notes": "Presents the semicircle constraint (q - 1/2)^2 + C_qc^2 = 1/4 as a geometric framework for quantum-classical correlation. The constraint emerges from the Born rule and provides a geometric interpretation of the quantum-classical boundary. Shows q = 0.5 is the unique point of maximum coherence. Demonstrates applications to variational quantum algorithms including geometric perspective on barren plateaus. Partial experimental validation on IonQ Forte-1 hardware via Azure Quantum (semicircle constraint validated; VQA applications simulation-validated). Code and test files available at https://github.com/Variably-Constant/QC_Semicircle_Constraint_Proof",
   "related_identifiers": [
     {
